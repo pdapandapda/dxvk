@@ -835,7 +835,7 @@ namespace dxvk {
       ENABLE_FEATURE(core.features, independentBlend, false),
       ENABLE_FEATURE(core.features, largePoints, false),
       ENABLE_FEATURE(core.features, logicOp, false),
-      ENABLE_FEATURE(core.features, multiDrawIndirect, false),
+      ENABLE_FEATURE(core.features, multiDrawIndirect, true),
       ENABLE_FEATURE(core.features, multiViewport, false),
       ENABLE_FEATURE(core.features, occlusionQueryPrecise, false),
       ENABLE_FEATURE(core.features, pipelineStatisticsQuery, false),
@@ -891,7 +891,7 @@ namespace dxvk {
       ENABLE_FEATURE(vk12, drawIndirectCount, false),
       ENABLE_FEATURE(vk12, hostQueryReset, false),
       ENABLE_FEATURE(vk12, runtimeDescriptorArray, false),
-      ENABLE_FEATURE(vk12, samplerFilterMinmax, false),
+      ENABLE_FEATURE(vk12, samplerFilterMinmax, true),
       ENABLE_FEATURE(vk12, samplerMirrorClampToEdge, false),
       ENABLE_FEATURE(vk12, scalarBlockLayout, false),
       ENABLE_FEATURE(vk12, shaderFloat16, false),
@@ -914,7 +914,7 @@ namespace dxvk {
       ENABLE_FEATURE(vk13, synchronization2, false),
 
       /* Allows sampling currently bound render targets for client APIs */
-      ENABLE_EXT_FEATURE(extAttachmentFeedbackLoopLayout, attachmentFeedbackLoopLayout, false),
+      ENABLE_EXT_FEATURE(extAttachmentFeedbackLoopLayout, attachmentFeedbackLoopLayout, true),
 
       /* Fix some border color jank due to hardware differences */
       ENABLE_EXT_FEATURE(extBorderColorSwizzle, borderColorSwizzle, false),
@@ -946,11 +946,11 @@ namespace dxvk {
       ENABLE_EXT_FEATURE(extDynamicRenderingUnusedAttachments, dynamicRenderingUnusedAttachments, false),
 
       /* Dynamic state to further improve the graphics_pipeline_library experience */
-      ENABLE_EXT_FEATURE(extExtendedDynamicState3, extendedDynamicState3AlphaToCoverageEnable, false),
-      ENABLE_EXT_FEATURE(extExtendedDynamicState3, extendedDynamicState3DepthClipEnable, false),
-      ENABLE_EXT_FEATURE(extExtendedDynamicState3, extendedDynamicState3RasterizationSamples, false),
-      ENABLE_EXT_FEATURE(extExtendedDynamicState3, extendedDynamicState3SampleMask, false),
-      ENABLE_EXT_FEATURE(extExtendedDynamicState3, extendedDynamicState3LineRasterizationMode, false),
+      ENABLE_EXT_FEATURE(extExtendedDynamicState3, extendedDynamicState3AlphaToCoverageEnable, true),
+      ENABLE_EXT_FEATURE(extExtendedDynamicState3, extendedDynamicState3DepthClipEnable, true),
+      ENABLE_EXT_FEATURE(extExtendedDynamicState3, extendedDynamicState3RasterizationSamples, true),
+      ENABLE_EXT_FEATURE(extExtendedDynamicState3, extendedDynamicState3SampleMask, true),
+      ENABLE_EXT_FEATURE(extExtendedDynamicState3, extendedDynamicState3LineRasterizationMode, true),
       ENABLE_EXT_FEATURE(extExtendedDynamicState3, extendedDynamicState3SampleLocationsEnable, false),
 
       /* Enables client API features */
