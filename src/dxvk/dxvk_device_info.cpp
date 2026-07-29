@@ -864,7 +864,7 @@ namespace dxvk {
       ENABLE_FEATURE(core.features, shaderResourceResidency, false),
       ENABLE_FEATURE(core.features, shaderResourceMinLod, false),
       ENABLE_FEATURE(core.features, tessellationShader, false),
-      ENABLE_FEATURE(core.features, textureCompressionBC, false),
+      ENABLE_FEATURE(core.features, textureCompressionBC, true),
       ENABLE_FEATURE(core.features, variableMultisampleRate, false),
       ENABLE_FEATURE(core.features, vertexPipelineStoresAndAtomics, false),
       ENABLE_FEATURE(core.features, wideLines, false),
